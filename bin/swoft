@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php declare(strict_types=1);
+
+// 注册 Composer 自动加载
+use App\Application;
+
+require_once __DIR__ . '/bootstrap.php';
+
+// 设置最大协程数
+Swoole\Coroutine::set([
+    'max_coroutine' => 300000,
+]);
+
+// 运行APP
+(new Application())->run();
