@@ -68,17 +68,17 @@ class AgentCommand
 
             CLog::info('Apollo update success！');
 
-//            /** @var HttpServer $server */
-//            $server = bean('httpServer');
-//            $server->restart();
+           /** @var HttpServer $server */
+           $server = bean('httpServer');
+           $server->restart();
 
 //            /** @var ServiceServer $server */
 //            $server = bean('rpcServer');
 //            $server->restart();
-
-            /* @var WebSocketServer $server */
-            $server = bean('wsServer');
-            $server->restart();
+//
+//             /* @var WebSocketServer $server */
+//             $server = bean('wsServer');
+//             $server->restart();
         }
     }
 }

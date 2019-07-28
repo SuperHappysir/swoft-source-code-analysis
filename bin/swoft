@@ -1,9 +1,9 @@
 #!/usr/bin/env php
 <?php declare(strict_types=1);
 
-// 注册 Composer 自动加载
 use App\Application;
 
+// 注册 Composer 自动加载
 require_once __DIR__ . '/bootstrap.php';
 
 // 设置最大协程数

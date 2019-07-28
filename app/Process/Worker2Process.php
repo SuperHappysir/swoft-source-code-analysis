@@ -31,18 +31,9 @@ class Worker2Process implements ProcessInterface
     public function run(Pool $pool, int $workerId): void
     {
         while (true) {
-
-            // Database
-            $user = User::find(1)->toArray();
-            CLog::info('user='.json_encode($user));
-
-            // Redis
-            Redis::set('test', 'ok');
-            CLog::info('test='.Redis::get('test'));
-
-            CLog::info('worker-' . $workerId.' context='.context()->getWorkerId());
-
-            Coroutine::sleep(3);
+            // CLog::info('worker-' . $workerId);
+    
+            Coroutine::sleep(4);
         }
     }
 }

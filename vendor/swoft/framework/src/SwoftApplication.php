@@ -173,7 +173,7 @@ class SwoftApplication implements SwoftInterface, ApplicationInterface
             Runtime::enableCoroutine();
         }
 
-        // 初始化应用
+        // 初始化应用准备工作
         $this->init();
 
         CLog::info('Project path is <info>%s</info>', $this->basePath);
@@ -205,7 +205,7 @@ class SwoftApplication implements SwoftInterface, ApplicationInterface
         // 初始化Swoft的基础处理器
         $this->processor = new ApplicationProcessor($this);
     
-        // 将swoft需要的程序处理器添加到基础处理器
+        // 将swoft需要的程序处理器注册到基础处理器
         $this->processor->addFirstProcessor(...$processors);
     }
 

@@ -97,6 +97,8 @@ class Apollo
                 );
             }
 
+            var_dump($body, $status);
+            
             if ($status != self::SUCCESS && $status != self::NOT_MODIFIED) {
                 $message = $body['message'] ?? '';
                 throw new ApolloException(sprintf('Apollo server error is %s', $message));

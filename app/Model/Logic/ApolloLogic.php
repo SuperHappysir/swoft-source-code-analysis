@@ -27,11 +27,13 @@ class ApolloLogic
     /**
      * @throws ApolloException
      */
-    public function pull(): void
+    public function pull(): array
     {
         $data = $this->config->pull('application');
 
         // Print data
         var_dump($data);
+    
+        return $data ?? [];
     }
 }

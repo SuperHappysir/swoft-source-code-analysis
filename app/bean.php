@@ -2,6 +2,8 @@
 
 use App\Common\DbSelector;
 use App\Common\RpcProvider;
+use App\Process\MnsProcess;
+use Swoft\Apollo\Apollo;
 use Swoft\Db\Database;
 use Swoft\Db\Pool;
 use Swoft\Http\Server\HttpServer;
@@ -17,6 +19,13 @@ use Swoft\Task\Swoole\TaskListener;
 use Swoft\WebSocket\Server\WebSocketServer;
 
 return [
+    'apollo' => [
+        'class'       => Apollo::class,
+        'host'        => '127.0.0.1',
+        'port'        => 8080,
+        'appId'       => '0123456789',
+        'clusterName' => 'default',
+    ],
     'lineFormatter'      => [
         'format'     => '%datetime% [%level_name%] [%channel%] [%event%] [tid:%tid%] [cid:%cid%] [traceid:%traceid%] [spanid:%spanid%] [parentid:%parentid%] [context:%context%] %messages%',
         'dateFormat' => 'Y-m-d H:i:s',
@@ -42,13 +51,19 @@ return [
             'notice'      => \bean('noticeHandler'),
         ],
     ],
+    'consul' => [
+        'host'    => '192.168.123.123',
+        'port'    => 8500,
+        'timeout' => 5
+    ],
     'httpServer'         => [
         'class'    => HttpServer::class,
         'port'     => 18306,
         'listener' => [
             'rpc' => bean('rpcServer')
         ],
-        'process'  => [//            'monitor' => bean(MonitorProcess::class)
+        'process'  => [
+            'MnsProcess' => bean(MnsProcess::class)
         ],
         'on'       => [
             //            SwooleEvent::TASK   => bean(SyncTaskListener::class),  // Enable sync task
