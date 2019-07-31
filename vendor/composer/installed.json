@@ -208,6 +208,47 @@
         ]
     },
     {
+        "name": "happysir/distributed-lock",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "dist": {
+            "type": "path",
+            "url": "../distributed-lock",
+            "reference": "f17edf24b616070f54c072382e579ce94ddda351"
+        },
+        "require": {
+            "ext-redis": "*",
+            "php": ">7.2",
+            "swoft/redis": "2.0.4"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^7.5",
+            "swoft/swoole-ide-helper": "dev-master"
+        },
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Happysir\\Lock\\": "src/"
+            }
+        },
+        "autoload-dev": {
+            "psr-4": {
+                "Test\\": "test/"
+            }
+        },
+        "license": [
+            "Apache-2.0"
+        ],
+        "authors": [
+            {
+                "name": "happysir",
+                "email": "luotao954@gmail.com"
+            }
+        ],
+        "description": "A distributed lock based on PHP and redis"
+    },
+    {
         "name": "monolog/monolog",
         "version": "1.24.0",
         "version_normalized": "1.24.0.0",
@@ -1113,17 +1154,17 @@
     },
     {
         "name": "phpunit/php-token-stream",
-        "version": "3.0.2",
-        "version_normalized": "3.0.2.0",
+        "version": "3.1.0",
+        "version_normalized": "3.1.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-            "reference": "c4a66b97f040e3e20b3aa2a243230a1c3a9f7c8c"
+            "reference": "e899757bb3df5ff6e95089132f32cd59aac2220a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/c4a66b97f040e3e20b3aa2a243230a1c3a9f7c8c",
-            "reference": "c4a66b97f040e3e20b3aa2a243230a1c3a9f7c8c",
+            "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/e899757bb3df5ff6e95089132f32cd59aac2220a",
+            "reference": "e899757bb3df5ff6e95089132f32cd59aac2220a",
             "shasum": "",
             "mirrors": [
                 {
@@ -1139,11 +1180,11 @@
         "require-dev": {
             "phpunit/phpunit": "^7.0"
         },
-        "time": "2019-07-08T05:24:54+00:00",
+        "time": "2019-07-25T05:29:42+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "3.0-dev"
+                "dev-master": "3.1-dev"
             }
         },
         "installation-source": "dist",
@@ -2316,12 +2357,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-aop.git",
-            "reference": "ea9072758882e9a2a0b695d7c64dfa3fd984c360"
+            "reference": "b29694721c0531611cc48c5acf5131b003f571a4"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-aop/zipball/ea9072758882e9a2a0b695d7c64dfa3fd984c360",
-            "reference": "ea9072758882e9a2a0b695d7c64dfa3fd984c360",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-aop/zipball/b29694721c0531611cc48c5acf5131b003f571a4",
+            "reference": "b29694721c0531611cc48c5acf5131b003f571a4",
             "shasum": "",
             "mirrors": [
                 {
@@ -2413,12 +2454,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-bean.git",
-            "reference": "1246ae987b57b9cf71db16b270eb4d8d02734965"
+            "reference": "27b70a00ab86e75fb1a10f7c038d6da394829b48"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-bean/zipball/1246ae987b57b9cf71db16b270eb4d8d02734965",
-            "reference": "1246ae987b57b9cf71db16b270eb4d8d02734965",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-bean/zipball/27b70a00ab86e75fb1a10f7c038d6da394829b48",
+            "reference": "27b70a00ab86e75fb1a10f7c038d6da394829b48",
             "shasum": "",
             "mirrors": [
                 {
@@ -2514,12 +2555,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-config.git",
-            "reference": "7f2972da216ac41f8f33d101da9c307cb5e654ad"
+            "reference": "eb72019388bd25882cb964616487f1b5d455c8e5"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-config/zipball/7f2972da216ac41f8f33d101da9c307cb5e654ad",
-            "reference": "7f2972da216ac41f8f33d101da9c307cb5e654ad",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-config/zipball/eb72019388bd25882cb964616487f1b5d455c8e5",
+            "reference": "eb72019388bd25882cb964616487f1b5d455c8e5",
             "shasum": "",
             "mirrors": [
                 {
@@ -2564,12 +2605,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-connection-pool.git",
-            "reference": "4dc8460b69a0ca5cfe5f855a8e831a6be33ebcd4"
+            "reference": "34503548d46e53853a4dbe3cb750b480ecd2ecb1"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-connection-pool/zipball/4dc8460b69a0ca5cfe5f855a8e831a6be33ebcd4",
-            "reference": "4dc8460b69a0ca5cfe5f855a8e831a6be33ebcd4",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-connection-pool/zipball/34503548d46e53853a4dbe3cb750b480ecd2ecb1",
+            "reference": "34503548d46e53853a4dbe3cb750b480ecd2ecb1",
             "shasum": "",
             "mirrors": [
                 {
@@ -2611,12 +2652,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-console.git",
-            "reference": "1e33bf63f09c3bb3c8d941132df2d86c984c53f6"
+            "reference": "e31d114c54597251fa4f487e0919f92afb8274c0"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-console/zipball/1e33bf63f09c3bb3c8d941132df2d86c984c53f6",
-            "reference": "1e33bf63f09c3bb3c8d941132df2d86c984c53f6",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-console/zipball/e31d114c54597251fa4f487e0919f92afb8274c0",
+            "reference": "e31d114c54597251fa4f487e0919f92afb8274c0",
             "shasum": "",
             "mirrors": [
                 {
@@ -2711,12 +2752,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-db.git",
-            "reference": "7a942e1588053b7e86dbf6f95454cdd1a9c60e26"
+            "reference": "d2e7f04a33316425c65da847571b96896c3ccfb4"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-db/zipball/7a942e1588053b7e86dbf6f95454cdd1a9c60e26",
-            "reference": "7a942e1588053b7e86dbf6f95454cdd1a9c60e26",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-db/zipball/d2e7f04a33316425c65da847571b96896c3ccfb4",
+            "reference": "d2e7f04a33316425c65da847571b96896c3ccfb4",
             "shasum": "",
             "mirrors": [
                 {
@@ -2812,12 +2853,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-error.git",
-            "reference": "4551d17dffb09f63ad6556711017a1b061bb41cb"
+            "reference": "7d5ce61a9aa18d11d290af85872a400afd3c12c2"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-error/zipball/4551d17dffb09f63ad6556711017a1b061bb41cb",
-            "reference": "4551d17dffb09f63ad6556711017a1b061bb41cb",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-error/zipball/7d5ce61a9aa18d11d290af85872a400afd3c12c2",
+            "reference": "7d5ce61a9aa18d11d290af85872a400afd3c12c2",
             "shasum": "",
             "mirrors": [
                 {
@@ -2861,12 +2902,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-event.git",
-            "reference": "a93840da9ea6b6a45c886c23426c95058f597184"
+            "reference": "b7c3eed172e92e9117864e354fe85156d28aa025"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-event/zipball/a93840da9ea6b6a45c886c23426c95058f597184",
-            "reference": "a93840da9ea6b6a45c886c23426c95058f597184",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-event/zipball/b7c3eed172e92e9117864e354fe85156d28aa025",
+            "reference": "b7c3eed172e92e9117864e354fe85156d28aa025",
             "shasum": "",
             "mirrors": [
                 {
@@ -2909,12 +2950,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-framework.git",
-            "reference": "6a3905c9a7522179189520f3edc6af2f87b28aca"
+            "reference": "db3afb5311c4da441ac29b322ab7f9510e787538"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-framework/zipball/6a3905c9a7522179189520f3edc6af2f87b28aca",
-            "reference": "6a3905c9a7522179189520f3edc6af2f87b28aca",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-framework/zipball/db3afb5311c4da441ac29b322ab7f9510e787538",
+            "reference": "db3afb5311c4da441ac29b322ab7f9510e787538",
             "shasum": "",
             "mirrors": [
                 {
@@ -2972,12 +3013,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-http-message.git",
-            "reference": "33d97b3f0557442a9746fb6d64415d2dee85273b"
+            "reference": "390116b60b5f92a613513e7ded8bc81e9837f7b5"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-http-message/zipball/33d97b3f0557442a9746fb6d64415d2dee85273b",
-            "reference": "33d97b3f0557442a9746fb6d64415d2dee85273b",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-http-message/zipball/390116b60b5f92a613513e7ded8bc81e9837f7b5",
+            "reference": "390116b60b5f92a613513e7ded8bc81e9837f7b5",
             "shasum": "",
             "mirrors": [
                 {
@@ -3025,12 +3066,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-http-server.git",
-            "reference": "983b10b7e6d12a8a59f792ea31d8b90748bd16e7"
+            "reference": "3b241b11783af909a6bc8a1ba16cb8049d85c758"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-http-server/zipball/983b10b7e6d12a8a59f792ea31d8b90748bd16e7",
-            "reference": "983b10b7e6d12a8a59f792ea31d8b90748bd16e7",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-http-server/zipball/3b241b11783af909a6bc8a1ba16cb8049d85c758",
+            "reference": "3b241b11783af909a6bc8a1ba16cb8049d85c758",
             "shasum": "",
             "mirrors": [
                 {
@@ -3073,12 +3114,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-i18n.git",
-            "reference": "ce593e1531cff63c4172de8da5276757959954bf"
+            "reference": "84170c07323bc4354494e7774551bd6dac15e12f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-i18n/zipball/ce593e1531cff63c4172de8da5276757959954bf",
-            "reference": "ce593e1531cff63c4172de8da5276757959954bf",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-i18n/zipball/84170c07323bc4354494e7774551bd6dac15e12f",
+            "reference": "84170c07323bc4354494e7774551bd6dac15e12f",
             "shasum": "",
             "mirrors": [
                 {
@@ -3171,12 +3212,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-log.git",
-            "reference": "d4122410004ecdabc93ce58dca3ae70dcb26e0f3"
+            "reference": "555b3b3fa1c352a7f07f26c7e0139aa0bea0df7a"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-log/zipball/d4122410004ecdabc93ce58dca3ae70dcb26e0f3",
-            "reference": "d4122410004ecdabc93ce58dca3ae70dcb26e0f3",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-log/zipball/555b3b3fa1c352a7f07f26c7e0139aa0bea0df7a",
+            "reference": "555b3b3fa1c352a7f07f26c7e0139aa0bea0df7a",
             "shasum": "",
             "mirrors": [
                 {
@@ -3318,12 +3359,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-redis.git",
-            "reference": "07af44a2f7a6ba345e515e474b8fdd6a3e910bef"
+            "reference": "2da94e02dd46b2655146052840f9b27bed34aec6"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-redis/zipball/07af44a2f7a6ba345e515e474b8fdd6a3e910bef",
-            "reference": "07af44a2f7a6ba345e515e474b8fdd6a3e910bef",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-redis/zipball/2da94e02dd46b2655146052840f9b27bed34aec6",
+            "reference": "2da94e02dd46b2655146052840f9b27bed34aec6",
             "shasum": "",
             "mirrors": [
                 {
@@ -3368,12 +3409,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-rpc.git",
-            "reference": "d7105bf81188753f4722dbc3d51f2492a8c5d25f"
+            "reference": "7db6662defc05fb3f51003187f4fa8d327165f17"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-rpc/zipball/d7105bf81188753f4722dbc3d51f2492a8c5d25f",
-            "reference": "d7105bf81188753f4722dbc3d51f2492a8c5d25f",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-rpc/zipball/7db6662defc05fb3f51003187f4fa8d327165f17",
+            "reference": "7db6662defc05fb3f51003187f4fa8d327165f17",
             "shasum": "",
             "mirrors": [
                 {
@@ -3416,12 +3457,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-rpc-client.git",
-            "reference": "b1339470afdf97e71468d38949cb6ab51c7d97ff"
+            "reference": "1d33eb6fb79de6f41164beb0df20c269ef3da950"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-rpc-client/zipball/b1339470afdf97e71468d38949cb6ab51c7d97ff",
-            "reference": "b1339470afdf97e71468d38949cb6ab51c7d97ff",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-rpc-client/zipball/1d33eb6fb79de6f41164beb0df20c269ef3da950",
+            "reference": "1d33eb6fb79de6f41164beb0df20c269ef3da950",
             "shasum": "",
             "mirrors": [
                 {
@@ -3465,12 +3506,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-rpc-server.git",
-            "reference": "bb10e25cfeb63448df298a33caa903a449f10564"
+            "reference": "8c965bbd1aa7dda2d63272024f036b05f015f667"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-rpc-server/zipball/bb10e25cfeb63448df298a33caa903a449f10564",
-            "reference": "bb10e25cfeb63448df298a33caa903a449f10564",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-rpc-server/zipball/8c965bbd1aa7dda2d63272024f036b05f015f667",
+            "reference": "8c965bbd1aa7dda2d63272024f036b05f015f667",
             "shasum": "",
             "mirrors": [
                 {
@@ -3514,12 +3555,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-server.git",
-            "reference": "544b778dc5be79a687c5e0026a5a3f5fdf709cc2"
+            "reference": "6cac40e6043c8ba4c69af69c47a978df615ee63e"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-server/zipball/544b778dc5be79a687c5e0026a5a3f5fdf709cc2",
-            "reference": "544b778dc5be79a687c5e0026a5a3f5fdf709cc2",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-server/zipball/6cac40e6043c8ba4c69af69c47a978df615ee63e",
+            "reference": "6cac40e6043c8ba4c69af69c47a978df615ee63e",
             "shasum": "",
             "mirrors": [
                 {
@@ -3560,12 +3601,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-stdlib.git",
-            "reference": "d3596c9dfad3406da581101444b2afbcfc0e4124"
+            "reference": "044f9017b00edda76d137329d310c9792cbdbe5f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-stdlib/zipball/d3596c9dfad3406da581101444b2afbcfc0e4124",
-            "reference": "d3596c9dfad3406da581101444b2afbcfc0e4124",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-stdlib/zipball/044f9017b00edda76d137329d310c9792cbdbe5f",
+            "reference": "044f9017b00edda76d137329d310c9792cbdbe5f",
             "shasum": "",
             "mirrors": [
                 {
@@ -3646,12 +3687,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-task.git",
-            "reference": "0a6aa4038c998cdc48dde1110432249b2ac379e3"
+            "reference": "cd03df23da3a63aec4647b7dcd5f0377215fb150"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-task/zipball/0a6aa4038c998cdc48dde1110432249b2ac379e3",
-            "reference": "0a6aa4038c998cdc48dde1110432249b2ac379e3",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-task/zipball/cd03df23da3a63aec4647b7dcd5f0377215fb150",
+            "reference": "cd03df23da3a63aec4647b7dcd5f0377215fb150",
             "shasum": "",
             "mirrors": [
                 {
@@ -3695,12 +3736,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-tcp.git",
-            "reference": "5ec1cd3f0f53783e468068c9123eb5f53b3b0997"
+            "reference": "0679d823dc3d67fd71a57da4b1c861b2875ed23b"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-tcp/zipball/5ec1cd3f0f53783e468068c9123eb5f53b3b0997",
-            "reference": "5ec1cd3f0f53783e468068c9123eb5f53b3b0997",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-tcp/zipball/0679d823dc3d67fd71a57da4b1c861b2875ed23b",
+            "reference": "0679d823dc3d67fd71a57da4b1c861b2875ed23b",
             "shasum": "",
             "mirrors": [
                 {
@@ -3744,12 +3785,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-tcp-server.git",
-            "reference": "1b7fcdd1db435a76e8241d870c6b3ec88b91ba21"
+            "reference": "2f64a03afb81352ede9721f0b4969f92f654c287"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-tcp-server/zipball/1b7fcdd1db435a76e8241d870c6b3ec88b91ba21",
-            "reference": "1b7fcdd1db435a76e8241d870c6b3ec88b91ba21",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-tcp-server/zipball/2f64a03afb81352ede9721f0b4969f92f654c287",
+            "reference": "2f64a03afb81352ede9721f0b4969f92f654c287",
             "shasum": "",
             "mirrors": [
                 {
@@ -3789,12 +3830,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-validator.git",
-            "reference": "e3db017fd96c107533573505f31aa08f84c12bf6"
+            "reference": "d973b46b041dc5c44415a5f502c2c3bf75569e0b"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-validator/zipball/e3db017fd96c107533573505f31aa08f84c12bf6",
-            "reference": "e3db017fd96c107533573505f31aa08f84c12bf6",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-validator/zipball/d973b46b041dc5c44415a5f502c2c3bf75569e0b",
+            "reference": "d973b46b041dc5c44415a5f502c2c3bf75569e0b",
             "shasum": "",
             "mirrors": [
                 {
@@ -3888,12 +3929,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/swoft-cloud/swoft-websocket-server.git",
-            "reference": "132a39bba7dc28d0b59f42034ad57221338f7cde"
+            "reference": "4a0a6f8f1c2547091faa9a05029283ea09223b2e"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/swoft-cloud/swoft-websocket-server/zipball/132a39bba7dc28d0b59f42034ad57221338f7cde",
-            "reference": "132a39bba7dc28d0b59f42034ad57221338f7cde",
+            "url": "https://api.github.com/repos/swoft-cloud/swoft-websocket-server/zipball/4a0a6f8f1c2547091faa9a05029283ea09223b2e",
+            "reference": "4a0a6f8f1c2547091faa9a05029283ea09223b2e",
             "shasum": "",
             "mirrors": [
                 {
@@ -3931,17 +3972,17 @@
     },
     {
         "name": "symfony/cache",
-        "version": "v4.3.2",
-        "version_normalized": "4.3.2.0",
+        "version": "v4.3.3",
+        "version_normalized": "4.3.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/cache.git",
-            "reference": "4acf343c9e3aea5a00d51926c01125441707635c"
+            "reference": "d263af3cec33afa862310e58545fdc10d779806f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/cache/zipball/4acf343c9e3aea5a00d51926c01125441707635c",
-            "reference": "4acf343c9e3aea5a00d51926c01125441707635c",
+            "url": "https://api.github.com/repos/symfony/cache/zipball/d263af3cec33afa862310e58545fdc10d779806f",
+            "reference": "d263af3cec33afa862310e58545fdc10d779806f",
             "shasum": "",
             "mirrors": [
                 {
@@ -3978,7 +4019,7 @@
             "symfony/dependency-injection": "~3.4|~4.1",
             "symfony/var-dumper": "^4.1.1"
         },
-        "time": "2019-06-26T07:55:28+00:00",
+        "time": "2019-06-28T13:16:30+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -4083,8 +4124,8 @@
     },
     {
         "name": "symfony/expression-language",
-        "version": "v4.3.2",
-        "version_normalized": "4.3.2.0",
+        "version": "v4.3.3",
+        "version_normalized": "4.3.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/expression-language.git",
@@ -4274,8 +4315,8 @@
     },
     {
         "name": "symfony/var-exporter",
-        "version": "v4.3.2",
-        "version_normalized": "4.3.2.0",
+        "version": "v4.3.3",
+        "version_normalized": "4.3.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/var-exporter.git",
@@ -4342,17 +4383,17 @@
     },
     {
         "name": "symfony/yaml",
-        "version": "v4.3.2",
-        "version_normalized": "4.3.2.0",
+        "version": "v4.3.3",
+        "version_normalized": "4.3.3.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/yaml.git",
-            "reference": "c60ecf5ba842324433b46f58dc7afc4487dbab99"
+            "reference": "34d29c2acd1ad65688f58452fd48a46bd996d5a6"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/yaml/zipball/c60ecf5ba842324433b46f58dc7afc4487dbab99",
-            "reference": "c60ecf5ba842324433b46f58dc7afc4487dbab99",
+            "url": "https://api.github.com/repos/symfony/yaml/zipball/34d29c2acd1ad65688f58452fd48a46bd996d5a6",
+            "reference": "34d29c2acd1ad65688f58452fd48a46bd996d5a6",
             "shasum": "",
             "mirrors": [
                 {
@@ -4374,7 +4415,7 @@
         "suggest": {
             "symfony/console": "For validating YAML files using the lint command"
         },
-        "time": "2019-04-06T14:04:46+00:00",
+        "time": "2019-07-24T14:47:54+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {

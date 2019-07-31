@@ -19,7 +19,7 @@ class LimiterController
 {
     /**
      * @RequestMapping()
-     * @RateLimiter(key="request.getUriPath()")
+     * @RateLimiter(key="request.getUriPath()",rate=1)
      *
      * @param Request $request
      *

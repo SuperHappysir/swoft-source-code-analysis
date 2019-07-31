@@ -144,7 +144,7 @@ if (!function_exists('context')) {
      *
      * @return ContextInterface|HttpContext|ServiceContext|TaskContext|FinishContext|UserProcessContext|ProcessContext|StartContext|WorkerStartContext|WorkerStopContext|ShutdownContext
      */
-    function context(): ContextInterface
+    function context(): ?ContextInterface
     {
         return Context::get();
     }

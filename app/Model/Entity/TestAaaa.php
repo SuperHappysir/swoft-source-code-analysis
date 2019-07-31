@@ -37,6 +37,15 @@ class TestAaaa extends Model
      */
     private $name;
 
+    /**
+     * 2
+     *
+     * @Column()
+     *
+     * @var int
+     */
+    private $num;
+
 
     /**
      * @param int $id
@@ -59,6 +68,16 @@ class TestAaaa extends Model
     }
 
     /**
+     * @param int $num
+     *
+     * @return void
+     */
+    public function setNum(int $num): void
+    {
+        $this->num = $num;
+    }
+
+    /**
      * @return int
      */
     public function getId(): ?int
@@ -72,6 +91,14 @@ class TestAaaa extends Model
     public function getName(): ?string
     {
         return $this->name;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNum(): ?int
+    {
+        return $this->num;
     }
 
 }

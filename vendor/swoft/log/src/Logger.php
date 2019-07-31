@@ -225,14 +225,14 @@ class Logger extends \Monolog\Logger
             'channel'    => $this->name,
             'datetime'   => $ts,
             'extra'      => $extra,
-            'event'      => context()->get('event'),
+            // 'event'      => context()->get('event'),
             'tid'        => Co::tid(),
             'cid'        => Co::id(),
         ];
 
         // Customized items
         foreach ($this->items as $item) {
-            $record[$item] = context()->get($item, '');
+            // $record[$item] = context()->get($item, '');
         }
 
 

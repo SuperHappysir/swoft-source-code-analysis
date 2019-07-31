@@ -311,7 +311,7 @@ class SwoftApplication implements SwoftInterface, ApplicationInterface
         return [
             // Env环境变量处理器
             new EnvProcessor($this),
-            // Config配置文件处理器
+            // Config配置文件处理器(注意这里是常量定义)
             new ConfigProcessor($this),
             // 注解收集处理器
             new AnnotationProcessor($this),

@@ -94,6 +94,10 @@ class ComposerStaticInit40ae0104b9b2b430c4c3b1ddbb8096b3
         array (
             'Leuffen\\TextTemplate\\' => 21,
         ),
+        'H' => 
+        array (
+            'Happysir\\Lock\\' => 14,
+        ),
         'D' => 
         array (
             'Dotenv\\' => 7,
@@ -329,6 +333,10 @@ class ComposerStaticInit40ae0104b9b2b430c4c3b1ddbb8096b3
         'Leuffen\\TextTemplate\\' => 
         array (
             0 => __DIR__ . '/..' . '/text/template/src',
+        ),
+        'Happysir\\Lock\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/happysir/distributed-lock/src',
         ),
         'Dotenv\\' => 
         array (
@@ -601,6 +609,7 @@ class ComposerStaticInit40ae0104b9b2b430c4c3b1ddbb8096b3
         'PHP_Token_CLOSE_SQUARE' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_CLOSE_TAG' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_COALESCE' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
+        'PHP_Token_COALESCE_EQUAL' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_COLON' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_COMMA' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_COMMENT' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
@@ -646,6 +655,7 @@ class ComposerStaticInit40ae0104b9b2b430c4c3b1ddbb8096b3
         'PHP_Token_FILE' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_FINAL' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_FINALLY' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
+        'PHP_Token_FN' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_FOR' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_FOREACH' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',
         'PHP_Token_FUNCTION' => __DIR__ . '/..' . '/phpunit/php-token-stream/src/Token.php',

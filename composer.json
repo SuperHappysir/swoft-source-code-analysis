@@ -11,7 +11,7 @@
   "require": {
     "php": ">7.1",
     "ext-pdo": "*",
-    "ext-redis": "*",
+
     "ext-json": "*",
     "ext-mbstring": "*",
     "swoft/db": "~2.0.0",
@@ -30,7 +30,8 @@
     "swoft/consul": "^2.0",
     "swoft/limiter": "~2.0.0",
     "swoft/breaker": "~2.0.0",
-    "swoft/devtool": "~2.0.0"
+    "swoft/devtool": "~2.0.0",
+    "happysir/distributed-lock": "dev-master"
   },
   "require-dev": {
     "swoft/swoole-ide-helper": "dev-master",
@@ -56,5 +57,11 @@
     ],
     "test": "./vendor/bin/phpunit -c phpunit.xml",
     "cs-fix": "./vendor/bin/php-cs-fixer fix $1"
-  }
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../distributed-lock"
+    }
+  ]
 }

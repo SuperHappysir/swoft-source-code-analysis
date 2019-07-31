@@ -289,7 +289,7 @@ class AnnotationResource extends Resource
                     continue;
                 }
     
-                // 解析注解
+                // 从类注释中解析注解
                 $this->parseAnnotation($ns, $className);
             }
         }
